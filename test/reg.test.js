@@ -35,7 +35,7 @@ describe('Test for Registration factory function', function () {
             assert.equal(null, error.reg_numbers);
         });
 
-        it('should not dis number plates that do not start with CA,CJ or CK', async function () {
+        it('should not display number plates that do not start with CA,CJ or CK', async function () {
             let reg = regs(pool);
 
             await reg.insertReg("GP 999 999");
