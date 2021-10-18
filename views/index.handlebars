@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="../public/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+</head>
+<div id="page-wrap">
+
+    <body>
+        <section>
+            <p class="heading">
+                Registration
+            </p>
+
+            <div class="msg">{{messages.msg}}</div>
+            {{#if messages.error}}
+            <div class="error">
+                <td> {{messages.error}}</td>
+            </div>
+            {{/if}}
+
+            <form action="/reg" method="post">
+                <p class="subHeading">
+                    Registration Number : <textarea name="name" rows="2" cols="40" class="textBox"
+                        onfocus="this.value=''" placeholder="Format:CA 123 456/CK 123 456/CJ 123 456 ">  </textarea>
+                    <button class="addBtn" type="submit">
+                        ADD
+                    </button>
+                </p>
+            </form>
+
+            <form action="/filter" method="post">
+                <p class="town">Please select town:</p>
+                <input type="radio" id="english" name="langRadioBtn" value="CA" class="CA">
+                <label for="English">Cape Town</label>
+                <input type="radio" id="spanish" name="langRadioBtn" value="CJ" class="CJ">
+                <label for="Spanish">Paarl</label>
+                <input type="radio" id="french" name="langRadioBtn" value="CK" class="CK">
+                <label for="French">Malmesbury</label>
+                <button class="addShowBtn" type="submit">
+                    SHOW
+                </button>
+            </form>
+
+
+            <div>
+                <h4>
+                    <a href="/viewAll"><button class="addView btn" type="submit">
+                        VIEW ALL
+                    </button></a>
+                    <a href="/reset">
+                        <button class="reset btn" type="submit" name="resetButton" value="reset">
+                            RESET
+                        </button></a>
+                    </form>
+                </h4>
+            </div>
+
+            <div class="regPlates">
+                {{#each display}}
+                <td href="/{{this.reg_numbers}}"><span>{{this.reg_numbers}}</span></td>
+                {{/each}}
+
+                   {{#if display2}}
+                <span>{{display1.reg_numbers}}</span>
+                  {{else}}
+                  <td></td>
+                {{/if}}
+                
+            </div>
+        </section>
+    </body>
+
+</html>

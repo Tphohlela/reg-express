@@ -1,0 +1,143 @@
+@media screen and (max-width: 480px) {
+  textarea{
+    /* margin: -10px; */
+    /* margin-left: 10px; */
+    /* margin: -7px; */
+    margin-bottom: -20vh;
+    /* font-size:16.5px; */
+    width: 390px;
+    height: 25px;
+    border-color:orange;
+    outline: cornsilk;
+  }
+  }
+
+body{
+  text-align: center;
+  /* background-color: red; */
+}
+
+.regPlates{
+  /* background-color: red ; */
+  /* display: inline-block; */
+  overflow: visible;
+}
+.error{
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+span{
+/* text-align: center; */
+/* overflow: auto; */
+display: inline;
+  background-color: orange;
+  border: chocolate;
+  border-radius: 10px;
+  border-style: solid;
+  border-width:thick;
+  transform: translate(-50%, -50%);
+  /* flex: auto; */
+  margin: 10px;
+  font-family: monospace;
+  font-size: xx-large;
+}
+
+.subHeading{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  color:chocolate;
+}
+.heading{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+  color:chocolate;
+  border-bottom: 5px solid  orange ;
+  border-bottom-width: thin;
+  font-weight: bold;
+}
+
+h5{
+  padding-left: 600px;
+  font-family:cursive;
+}
+
+section{
+text-align: center;   
+border: 8px solid #f3a042;
+border-style: groove;
+padding:10px;
+  margin: 25px 50px 75px;
+}
+
+
+textarea{
+  /* margin: -10px; */
+  /* margin-left: 10px; */
+  /* margin: -7px; */
+  margin-bottom: -2vh;
+  /* font-size:16.5px; */
+  width: 390px;
+  height: 25px;
+  border-color:orange;
+  outline: cornsilk;
+}
+
+.textBox{
+  font-size:16.5px;
+  padding: 7px;
+
+}
+
+/* .error{
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} */
+.town{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  color:chocolate;
+}
+label{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  color:chocolate;
+}
+
+button{
+  background-color:chocolate;
+  border-color: cornsilk;
+  border-radius: 25px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 16px;
+  outline: cornsilk;
+}
+
+.btn:hover{
+  cursor: pointer;
+  color: w;
+  box-shadow:cornsilk;
+  font-weight:bolder;
+  transform: scale(1.1) perspective(1px)
+}
+
+.msg{
+  color:green;
+  font-weight: bold;
+  font-size: 20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  ::placeholder{
+    padding-top: 1px;
+  }
+  a{
+    text-decoration: none;
+    color: #000;
+  }
